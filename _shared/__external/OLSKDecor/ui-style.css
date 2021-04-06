@@ -32,6 +32,8 @@
 
 	--OLSKAlertColor: #eeeeee;
 	--OLSKCodeColor: hsl(0, 0%, 20%);
+
+	--OLSKStickyHeaderTop: 0;
 }
 
 /* OLSKCommonEdge */
@@ -84,7 +86,7 @@
 .OLSKStickyHeader {
 	position: -webkit-sticky;
 	position: sticky;
-	top: 0;
+	top: var(--OLSKStickyHeaderTop);
 }
 
 /* OLSKViewport */
@@ -425,7 +427,7 @@
 
 .OLSKDecor input[type="text"], .OLSKDecor textarea, .OLSKDecorInput {	
 	background: var(--OLSKCommonBackground) !important;
-	border-color: var(--OLSKCommonBorderColor) !important;
+	border-color: var(--OLSKCommonEdgeColor) !important;
 
 	/* OLSKMobileSafariRemoveDefaultInputStyle */
 	-webkit-appearance: none;
@@ -500,7 +502,10 @@ a.OLSKDecorPress {
 /* OLSKCommonAppring */
 
 .OLSKCommonAppring {
+	display: block;
+
 	margin: 40px 0;
+	
 	text-align: center;
 }
 
@@ -709,4 +714,31 @@ a.OLSKDecorPress {
 
 .OLSKDecorSilentLink img {
  border: none !important;
+}
+
+/* OLSKDecorGlossary */
+
+.OLSKDecorGlossary {
+	padding: 30px;
+
+	margin: 50px 0;
+
+	background: hsl(0, 0%, 96%);
+	color: hsl(0, 0%, 20%);
+}
+
+.OLSKDecorGlossary :first-child {
+	margin-top: 0;
+}
+
+.OLSKDecorGlossary :last-child {
+	margin-bottom: 0;
+}
+
+.OLSKDecorGlossary dt {
+	font-weight: bold;
+}
+
+.OLSKDecorGlossary dd {
+	margin: 10px 0;
 }
