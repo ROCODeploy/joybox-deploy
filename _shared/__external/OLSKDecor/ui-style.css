@@ -26,9 +26,9 @@
 
 	--OLSKSectionSpacing: 2em;
 
-	--OLSKMasterListItemSelectedColorDefault: #e6e6e6;
-	--OLSKMasterListItemSelectedColorActive: #1a81ff;
-	--OLSKMasterListItemSelectedColorActiveInverse: white;
+	--OLSKCollectionItemsLocusColorDefault: #e6e6e6;
+	--OLSKCollectionItemsLocusColorActive: #1a81ff;
+	--OLSKCollectionItemsLocusColorActiveInverse: white;
 
 	--OLSKAlertColor: #eeeeee;
 	--OLSKCodeColor: hsl(0, 0%, 20%);
@@ -324,15 +324,15 @@
 	flex-grow: 1;
 }
 
-.OLSKMasterListBody .OLSKResultsListItemSelected .OLSKMasterListItem {
-	background: var(--OLSKMasterListItemSelectedColorDefault);
+.OLSKMasterListBody .OLSKCollectionItemLocus {
+	background: var(--OLSKCollectionItemsLocusColorDefault);
 }
 
 @media screen and (min-width: 760px) {
 
-.OLSKMasterListFocused .OLSKResultsListItemSelected .OLSKMasterListItem {
-	background: var(--OLSKMasterListItemSelectedColorActive);
-	color: var(--OLSKMasterListItemSelectedColorActiveInverse);
+.OLSKMasterListFocused .OLSKCollectionItemLocus {
+	background: var(--OLSKCollectionItemsLocusColorActive);
+	color: var(--OLSKCollectionItemsLocusColorActiveInverse);
 }
 
 }

@@ -31,6 +31,42 @@
 <p>This document is a work-in-progress. Feel free to reach out on <a href="https://merveilles.town/@rosano">Mastodon</a> or <a href="https://twitter.com/rosano">Twitter</a>.</p>
 </div>
 
+<h1 id="add-with-one-click">Add with one click</h1>
+<p>The following &#39;bookmarklets&#39; can be dragged to your browser&#39;s favourites to do something special.</p>
+<table>
+<thead>
+<tr>
+<th align="left"></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a class="JBXGuideBookmarklet" href="/javascript:void(t=open('http://localhost:3000/play#data='+encodeURIComponent(location.href)+'&name='+encodeURIComponent(document.title),'Joybox','toolbar=no,width=100,height=100'));t.blur();">Queue</a></td>
+<td>Add the current page to your list silently and in the background.</td>
+</tr>
+<tr>
+<td align="left"><a class="JBXGuideBookmarklet" href="/javascript:void(t=open('http://localhost:3000/play#data='+encodeURIComponent(window.prompt()),'Joybox','toolbar=no,width=100,height=100'));t.blur();">Capture</a></td>
+<td>Enter notes to be added your list.</td>
+</tr>
+</tbody></table>
+<h1 id="api-parameters">API Parameters</h1>
+<p><code>http://localhost:3000/play#PARAM=VALUE</code></p>
+<table>
+<thead>
+<tr>
+<th align="left">PARAM</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><code>data</code></td>
+<td>Text input, can be a URL or plain text.</td>
+</tr>
+<tr>
+<td align="left"><code>name</code></td>
+<td>Text to be assigned to the item name.</td>
+</tr>
+</tbody></table>
 <h1 id="shortcuts">Shortcuts</h1>
 <div class="OLSKDecorNotice">
 
@@ -121,7 +157,7 @@
 <h1 id="add-to-home-screen-on-mobile-and-tablet-devices">Add to Home screen on mobile and tablet devices</h1>
 <p>This web app can be &#39;installed&#39; and used as if it were a native mobile app (with an icon, working without internet access, running as a standalone app outside of the browser).</p>
 <ol>
-<li><a href="/JBXPlayRoute">Open the app</a> in your browser, then follow the steps based on your operating system:</li>
+<li><a href="/play">Open the app</a> in your browser, then follow the steps based on your operating system:</li>
 </ol>
 <h2 id="ios--safari">iOS + Safari</h2>
 <ol start="2">
