@@ -1,8 +1,16 @@
 :root {
-	--OLSKCommonBackground: rgb(254, 247, 177);
+	--OLSKCommonBackground: #fef7b1;
 	--OLSKCommonForeground: #333;
+	--OLSKCommonEdgeColor: #999;
+
+	--OLSKCodeForeground: #7c7b5b;
+	--OLSKCodeBackground: #e8e1a3;
 }
 
 body {
 	background: var(--OLSKCommonBackground);
+}
+
+a {
+	color: rgb(237, 59, 28);
 }
