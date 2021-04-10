@@ -11,6 +11,8 @@
 	--OLSKCommonBackground: white;
 	--OLSKCommonForeground: black;
 
+	--OLSKInputBackground: var(--OLSKCommonBackground);
+
 	--OLSKCommonBorderColor: rgba(0, 0, 0, 0.3);
 	--OLSKCommonBorder: 1px solid var(--OLSKCommonBorderColor);
 
@@ -18,6 +20,9 @@
 	--OLSKCommonEdgeBorder: 1px solid var(--OLSKCommonEdgeColor);
 
 	--OLSKCommonInteractiveFill: hsl(0, 0%, 90%);
+
+	--OLSKChunkHeadingBorderColor: #cccccc;
+	--OLSKChunkHeadingBackground: #e9e9e9;
 
 	--OLSKCommonInputPadding: 5px;
 
@@ -428,7 +433,7 @@
 }
 
 .OLSKDecor input[type="text"], .OLSKDecor textarea, .OLSKDecorInput {	
-	background: var(--OLSKCommonBackground) !important;
+	background: var(--OLSKInputBackground) !important;
 	border-color: var(--OLSKCommonEdgeColor) !important;
 
 	/* OLSKMobileSafariRemoveDefaultInputStyle */
@@ -743,4 +748,15 @@ a.OLSKDecorPress {
 
 .OLSKDecorGlossary dd {
 	margin: 10px 0;
+}
+
+/* OLSKCollectionChunkHeading */
+
+.OLSKCollectionChunkHeading {
+	padding: 6px;
+	outline: var(--OLSKChunkHeadingBorderColor) solid 1px;
+
+	font-weight: bold;
+	color: var(--OLSKCommonForeground);
+	background: var(--OLSKChunkHeadingBackground);
 }
