@@ -331,6 +331,10 @@
 	flex-grow: 1;
 }
 
+.OLSKNarrowBody .OLSKCollection {
+	flex-shrink: 0;
+}
+
 .OLSKNarrowBody .OLSKCollectionItemLocus {
 	background: var(--OLSKCollectionItemsLocusColorDefault);
 }
@@ -764,7 +768,7 @@ a.OLSKDecorPress {
 /* OLSKCollectionItemStash */
 
 .OLSKCollectionItemStash .OLSKCollectionItemStashStatus {
-	background: var(--OLSKInputBackground);
+	background: var(--OLSKCommonForeground);
 }
 
 .OLSKCollectionItemStashStatus {
@@ -782,4 +786,8 @@ a.OLSKDecorPress {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+.OLSKCollectionItemStashStatusImage * {
+	stroke: var(--OLSKCommonBackground);
 }
