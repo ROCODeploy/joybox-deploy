@@ -199,9 +199,7 @@ body {
 	display: none !important;
 }
 
-}
-
-.OLSKVisibilityScreenreader {
+.OLSKVisibilityDesktopScreenreader {
 	display: unset !important;
 
 	position: absolute;
@@ -210,6 +208,8 @@ body {
 	width: 1px;
 	height: 1px;
 	overflow: hidden;
+}
+
 }
 
 /* OLSKToolbar */
@@ -512,6 +512,10 @@ a.OLSKDecorPress {
 
 	background: var(--OLSKCodeBackground);
 	color: var(--OLSKCodeForeground);
+}
+
+.OLSKDecor :disabled {
+	opacity: 0.5;
 }
 
 /* OLSKDecorTitle */
