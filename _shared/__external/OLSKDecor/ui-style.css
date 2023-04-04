@@ -491,6 +491,8 @@ body {
 	padding: var(--OLSKCommonInputPadding);
 	border: var(--OLSKCommonBorder);
 	border-radius: var(--OLSKBorderRadius);
+	
+	color: inherit;
 }
 
 .OLSKDecor input[type="text"], .OLSKDecor input[type="email"], .OLSKDecor textarea, .OLSKDecorInput {	
@@ -1091,4 +1093,19 @@ a.OLSKDecorPress {
 
 .OLSKJar {
 	display: none;
+}
+
+.OLSKDecorBlink {
+	animation: blink-animation 1s steps(5, start) infinite;
+	-webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }
